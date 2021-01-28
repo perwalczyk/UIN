@@ -1,86 +1,103 @@
-html {
-
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New";
 }
 
 header {
-	padding: 20px;
-    width:100%;
-    height:50px;
-    margin-top:0px;
-    border: 0px, 0px, 0px, 5px solid red;
+	width: 100%;
+	height: 90px;
+	margin: 0;
+	border: 1px #e9e9e9 solid;
+  	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 
+h1 {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#hiof {
+	padding: 1rem 0rem 1rem 2rem;
+ 	width: 45%;
+ 	float: left;
+}
+
+#user {
+	padding: 1rem 2rem 1rem 0rem;
+	width: 45%;
+	float: right;
+	text-align: right;
 }
 
 a {
 	color: black;
-    text-decoration: none; 
-    background-color: none;
-}
-
-#submitBtn{
-	border-radius: 2px;
-}
-
-#hiof{
-	width: 50%;
-	float: left;
-	margin: 0px;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-#user{
-	width: 50%;
-	float: right;
-	text-align:right;
-	margin: 0px;
-	font-size: 16px;
-	font-weight: bold;
+	text-decoration: none; 
 }
 
 main {
 	padding-top: 5%;
-	padding-left: 10%
-}
-
-#titletext {
-	border: 1px;
-}
-
-
-.grid
- {
-  display: grid;
-  grid-template-columns: repeat(3, 500px);  /* 3 columns */
-  grid-template-rows: repeat(3,150px); /* 3 rows  */
-  grid-gap:50px 30px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
-} 
-
-.grid-item{
-  border:thin gray solid;
-  padding: px;
-}
-
-
-section article {
-	padding: 20px;
-}
-
-
-button{
-	float: right;
-
-} 
-
-p {
-	margin: 10px;
+	width: 70%;
+	margin: auto;
 }
 
 #titleText {
+	border-size: 1px;
+ 	width: 50%;
+ 	height: 3rem;
+ 	border-radius: 10px;
+}
 
+#taskText {
+	width: 100%;
+	height: 7rem;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+}
+
+#submitBtn {
+	float: right;
+	height: 3rem;
+	width: 10rem;
+	font-size: 24px;
+	color: white;
+	background-color: #56d4c2;
+	border-radius: 10px;
+}
+
+#myCards
+{
+	padding-top: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+	border: 1px #e9e9e9 solid;
+	border-radius: 10px;
+  	padding: 1rem;
+  	margin: 2rem;
+  	text-align: left;
+  	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+	margin-top: 1rem;
+	float: right;
+	height: 2rem;
+	width: 6rem;
+	font-size: 18px;
+	color: white;
+	background-color: #56d4c2;
+	border-radius: 10px;
 }
 
 
-#taskText{
-
+@media only screen and (max-width: 800px) {
+.grid {
+  grid-template-columns: auto;
+}
 }
